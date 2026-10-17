@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carry-le-Rouet - Échappées Belles</title>
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif'],
+                    },
+                    colors: {
+                        stone: { 50: '#fafaf9', 100: '#f5f5f4', 200: '#e7e5e4', 800: '#292524', 900: '#1c1917' },
+                        earth: { 500: '#8c7355', 600: '#705c44' },
+                        sea: { 500: '#5c7c8a' }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .img-hover-zoom { overflow: hidden; }
+        .img-hover-zoom img { transition: transform 0.6s ease; }
+        .img-hover-zoom:hover img { transform: scale(1.05); }
+    </style>
+</head>
+<body class="font-sans text-stone-800 bg-stone-50 antialiased selection:bg-sea-500 selection:text-white">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-40 bg-white/95 backdrop-blur-md shadow-sm border-b border-stone-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <a href="index.html" class="font-serif text-2xl font-bold tracking-wider text-stone-900">
+                    Échappées Belles<span class="text-sea-500">.</span>
+                </a>
+                <div class="hidden md:flex space-x-6 items-center">
+                    <a href="index.html" class="text-stone-600 hover:text-sea-500 text-sm font-medium uppercase tracking-wide"><i class="fa-solid fa-arrow-left text-xs mr-1"></i> Accueil</a>
+                    <a href="alpage.html" class="text-stone-600 hover:text-sea-500 text-sm font-medium uppercase tracking-wide">Alpage Montagne</a>
+					<a href="parking.html" class="block text-stone-800 hover:text-sea-500 font-medium">Guide des Parkings & Stationnement</a>
+                    <a href="checkin.html" class="text-stone-600 hover:text-sea-500 text-sm font-medium uppercase tracking-wide">Arrivée</a>
+                    <a href="checkout.html" class="text-stone-600 hover:text-sea-500 text-sm font-medium uppercase tracking-wide">Départ</a>
+                    <a href="conditions.html" target="_blank" class="text-stone-600 hover:text-sea-500 text-sm font-medium uppercase tracking-wide">Conditions</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header / Hero Section Carry -->
+    <header class="pt-32 pb-12 bg-white border-b border-stone-200">
+        <div class="max-w-4xl mx-auto px-4 text-center">
+            <p class="text-sea-500 font-medium tracking-[0.2em] uppercase text-xs mb-3">Bouches-du-Rhône — Côte Bleue</p>
+            <h1 class="text-4xl md:text-5xl font-serif text-stone-900 mb-6">Carry-le-Rouet</h1>
+            <p class="text-stone-600 font-light text-lg leading-relaxed max-w-2xl mx-auto">
+                Un magnifique appartement baigné de lumière. Profitez d'un cadre idyllique avec terrasse face à la mer Méditerranée, idéal pour se ressourcer.
+            </p>
+        </div>
+    </header>
+
+    <main class="py-16 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 space-y-16">
+
+        <!-- Galerie Photos -->
+        <section class="grid grid-cols-1 md:grid-cols-3 gap-4">
+            <div class="md:col-span-2 img-hover-zoom rounded-sm h-64 md:h-96">
+                <img src="images/carry-terrasse.jpg" alt="Terrasse vue mer" class="w-full h-full object-cover" />
+            </div>
+            <div class="grid grid-cols-2 md:grid-cols-1 gap-4 h-64 md:h-96">
+                <div class="img-hover-zoom rounded-sm h-full">
+                    <img src="images/carry-salon.jpg" alt="Intérieur salon" class="w-full h-full object-cover" />
+                </div>
+                <div class="img-hover-zoom rounded-sm h-full">
+                    <img src="images/carry-chambre.jpg" alt="Chambre" class="w-full h-full object-cover" />
+                </div>
+            </div>
+        </section>
+
+        <!-- Équipements -->
+        <section class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center py-6 bg-white p-6 rounded-sm border border-stone-200 shadow-sm">
+            <div><i class="fa-solid fa-snowflake text-2xl text-sea-500 mb-2"></i><p class="text-stone-800 font-medium text-sm">Climatisation</p></div>
+            <div><i class="fa-solid fa-wifi text-2xl text-sea-500 mb-2"></i><p class="text-stone-800 font-medium text-sm">Wi-Fi Fibre</p></div>
+            <div><i class="fa-solid fa-kitchen-set text-2xl text-sea-500 mb-2"></i><p class="text-stone-800 font-medium text-sm">Cuisine Équipée</p></div>
+            <div><i class="fa-solid fa-umbrella-beach text-2xl text-sea-500 mb-2"></i><p class="text-stone-800 font-medium text-sm">Kit Plage Inclus</p></div>
+        </section>
+
+        <!-- SECTION CALENDRIER GOOGLE SYNCHRONISÉ -->
+        <section class="bg-white p-6 md:p-8 rounded-sm border border-stone-200 shadow-sm">
+            <div class="text-center mb-8">
+                <h3 class="text-2xl font-serif text-stone-900 mb-2"><i class="fa-regular fa-calendar-days text-sea-500 mr-2"></i>Disponibilités du Logement</h3>
+                <p class="text-stone-500 text-sm font-light">Ce calendrier est directement mis à jour en temps réel.</p>
+            </div>
+
+            <!-- Conteneur Responsive Iframe -->
+            <div class="w-full h-[450px] md:h-[600px] rounded-sm overflow-hidden border border-stone-200">
+                <!-- IMPORTANT : Remplacez l'URL ci-dessous dans l'attribut src par le lien de votre calendrier Google -->
+                <iframe 
+                    src="https://calendar.google.com/calendar/embed?src=fr.french%23holiday%40group.v.calendar.google.com&ctz=Europe%2FParis&showTitle=0&showNav=1&showDate=1&showPrint=0&showTabs=0&showCalendars=0&showTz=0" 
+                    style="border: 0" 
+                    width="100%" 
+                    height="100%" 
+                    frameborder="0" 
+                    scrolling="no">
+                </iframe>
+            </div>
+        </section>
+
+        <!-- Règles & Liens d'information -->
+        <section class="bg-white p-8 rounded-sm border border-stone-200 shadow-sm">
+            <h3 class="text-2xl font-serif text-stone-900 mb-6 text-center">Informations Pratiques du Séjour</h3>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="bg-stone-50 p-6 rounded-sm border border-stone-100 flex flex-col justify-between">
+                    <div>
+                        <h4 class="text-md font-serif text-sea-600 mb-2"><i class="fa-solid fa-clock mr-2"></i>Horaires</h4>
+                        <p class="text-stone-600 text-sm font-light mb-4">Arrivée : 15h00 - 20h00<br>Départ : Avant 11h00</p>
+                    </div>
+                    <div class="space-y-1 text-xs pt-2 border-t border-stone-200">
+                        <a href="checkin.html" class="block text-stone-800 hover:text-sea-500 font-medium">Guide Arrivée (Check-in) &rarr;</a>
+                        <a href="checkout.html" class="block text-stone-800 hover:text-sea-500 font-medium">Guide Départ (Check-out) &rarr;</a>
+                    </div>
+                </div>
+
+                <div class="bg-stone-50 p-6 rounded-sm border border-stone-100 flex flex-col justify-between">
+                    <div>
+                        <h4 class="text-md font-serif text-sea-600 mb-2"><i class="fa-solid fa-users mr-2"></i>Occupation</h4>
+                        <p class="text-stone-600 text-sm font-light mb-4"><strong>2 voyageurs maximum.</strong><br>Logement non-fumeur, fêtes interdites.</p>
+                    </div>
+                    <a href="conditions.html" target="_blank" class="text-xs text-stone-800 hover:text-sea-500 font-medium pt-2 border-t border-stone-200 block">Règlement complet &rarr;</a>
+                </div>
+
+                <div class="bg-stone-50 p-6 rounded-sm border border-stone-100 flex flex-col justify-between">
+                    <div>
+                        <h4 class="text-md font-serif text-sea-600 mb-2"><i class="fa-solid fa-shield-halved mr-2"></i>Caution</h4>
+                        <p class="text-stone-600 text-sm font-light mb-4">Empreinte bancaire obligatoire avant remise des clés.</p>
+                    </div>
+                    <a href="conditions.html" target="_blank" class="text-xs text-stone-800 hover:text-sea-500 font-medium pt-2 border-t border-stone-200 block">Conditions d'annulation &rarr;</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Bouton Réservation -->
+        <section class="text-center pt-6">
+            <button onclick="openChoiceModal()" class="bg-stone-900 text-white px-12 py-4 hover:bg-sea-500 transition-colors duration-300 text-sm font-medium uppercase tracking-wide rounded-sm shadow-md cursor-pointer">
+                Demander une Réservation
+            </button>
+        </section>
+
+    </main>
+
+    <!-- MODALE 1 : CHOIX DU CANAL DE RÉSERVATION -->
+    <div id="choice-modal" class="fixed inset-0 z-50 hidden flex items-center justify-center p-4 bg-stone-900/70 backdrop-blur-sm">
+        <div class="bg-white rounded-sm shadow-2xl max-w-md w-full p-6 relative">
+            <button onclick="closeChoiceModal()" class="absolute top-4 right-4 text-stone-400 hover:text-stone-800 text-2xl font-bold">&times;</button>
+            <h3 class="text-2xl font-serif text-stone-900 mb-2 text-center">Réserver Carry-le-Rouet</h3>
+            <p class="text-sm text-stone-500 mb-6 text-center">Sélectionnez votre plateforme de réservation :</p>
+            <div class="space-y-3">
+                <button onclick="openBookingForm()" class="w-full flex items-center justify-between bg-stone-900 text-white p-4 rounded-sm hover:bg-sea-500 transition-colors text-left">
+                    <div><div class="font-medium text-sm">Réservation en Direct</div><div class="text-xs text-stone-300">Meilleur tarif garanti (sans frais)</div></div>
+                    <i class="fa-solid fa-arrow-right text-sm"></i>
+                </button>
+                <a href="https://www.airbnb.fr" target="_blank" class="w-full flex items-center justify-between bg-white border border-stone-200 text-stone-800 p-4 rounded-sm hover:border-red-400">
+                    <div class="flex items-center gap-3"><i class="fa-brands fa-airbnb text-red-500 text-xl"></i><div><div class="font-medium text-sm">Airbnb</div></div></div>
+                    <i class="fa-solid fa-arrow-up-right-from-square text-xs text-stone-400"></i>
+                </a>
+                <a href="https://www.abritel.fr" target="_blank" class="w-full flex items-center justify-between bg-white border border-stone-200 text-stone-800 p-4 rounded-sm hover:border-blue-400">
+                    <div class="flex items-center gap-3"><i class="fa-solid fa-house-chimney text-blue-600 text-xl"></i><div><div class="font-medium text-sm">Abritel / Vrbo</div></div></div>
+                    <i class="fa-solid fa-arrow-up-right-from-square text-xs text-stone-400"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- MODALE 2 : FORMULAIRE EN DIRECT -->
+    <div id="booking-modal" class="fixed inset-0 z-50 hidden flex items-center justify-center p-4 bg-stone-900/70 backdrop-blur-sm">
+        <div class="bg-white rounded-sm shadow-2xl max-w-lg w-full p-6 relative max-h-[90vh] overflow-y-auto">
+            <button onclick="closeBookingModal()" class="absolute top-4 right-4 text-stone-400 hover:text-stone-800 text-2xl font-bold">&times;</button>
+            <h3 class="text-2xl font-serif text-stone-900 mb-1">Réservation Directe — Carry-le-Rouet</h3>
+            <p class="text-sm text-stone-500 mb-6">Max 2 voyageurs</p>
+
+            <form action="https://formsubmit.co/votre-email@exemple.com" method="POST" class="space-y-4">
+                <input type="hidden" name="_subject" value="Réservation Directe - Carry-le-Rouet">
+                <input type="hidden" name="Logement" value="Carry-le-Rouet">
+
+                <div><label class="block text-xs font-medium uppercase text-stone-600 mb-1">Nom complet *</label><input type="text" name="Nom" required class="w-full px-4 py-2 border rounded-sm text-sm"></div>
+                <div class="grid grid-cols-2 gap-4">
+                    <div><label class="block text-xs font-medium uppercase text-stone-600 mb-1">E-mail *</label><input type="email" name="Email" required class="w-full px-4 py-2 border rounded-sm text-sm"></div>
+                    <div><label class="block text-xs font-medium uppercase text-stone-600 mb-1">Téléphone *</label><input type="tel" name="Telephone" required class="w-full px-4 py-2 border rounded-sm text-sm"></div>
+                </div>
+                <div class="grid grid-cols-2 gap-4">
+                    <div><label class="block text-xs font-medium uppercase text-stone-600 mb-1">Arrivée *</label><input type="date" name="Date_Arrivee" required class="w-full px-4 py-2 border rounded-sm text-sm"></div>
+                    <div><label class="block text-xs font-medium uppercase text-stone-600 mb-1">Départ *</label><input type="date" name="Date_Depart" required class="w-full px-4 py-2 border rounded-sm text-sm"></div>
+                </div>
+                <div>
+                    <label class="block text-xs font-medium uppercase text-stone-600 mb-1">Voyageurs * (max 2)</label>
+                    <input type="number" name="Voyageurs" min="1" max="2" value="2" required class="w-full px-4 py-2 border rounded-sm text-sm">
+                </div>
+                <div><label class="block text-xs font-medium uppercase text-stone-600 mb-1">Message</label><textarea name="Message" rows="2" class="w-full px-4 py-2 border rounded-sm text-sm"></textarea></div>
+
+                <div class="pt-2">
+                    <label class="flex items-start gap-3 cursor-pointer">
+                        <input type="checkbox" name="Conditions_Acceptees" required class="mt-1">
+                        <span class="text-xs text-stone-600">J'accepte les <a href="conditions.html" target="_blank" class="underline font-medium">conditions de location</a>, <a href="checkin.html" target="_blank" class="underline font-medium">horaires d'arrivée</a> et <a href="checkout.html" target="_blank" class="underline font-medium">de départ</a>. *</span>
+                    </label>
+                </div>
+
+                <button type="submit" class="w-full bg-stone-900 text-white py-3 text-xs uppercase tracking-widest hover:bg-sea-500">Envoyer la demande</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-stone-900 text-stone-400 py-10 text-center mt-20">
+        <a href="index.html" class="inline-block bg-stone-800 text-stone-200 px-6 py-2 rounded-sm text-xs uppercase tracking-widest hover:bg-sea-500 transition-colors mb-4">Retour à l'accueil</a>
+        <p class="text-xs font-light text-stone-600">&copy; 2026 Échappées Belles. Tous droits réservés.</p>
+    </footer>
+
+    <script>
+        function openChoiceModal() { document.getElementById('choice-modal').classList.remove('hidden'); }
+        function closeChoiceModal() { document.getElementById('choice-modal').classList.add('hidden'); }
+        function openBookingForm() { closeChoiceModal(); document.getElementById('booking-modal').classList.remove('hidden'); }
+        function closeBookingModal() { document.getElementById('booking-modal').classList.add('hidden'); }
+    </script>
+</body>
+</html>

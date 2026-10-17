@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stationnement & Parkings - Carry-le-Rouet | Échappées Belles</title>
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Configuration Tailwind CSS -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif'],
+                    },
+                    colors: {
+                        stone: {
+                            50: '#fafaf9',
+                            100: '#f5f5f4',
+                            200: '#e7e5e4',
+                            800: '#292524',
+                            900: '#1c1917',
+                        },
+                        earth: {
+                            500: '#8c7355',
+                            600: '#705c44',
+                        },
+                        sea: {
+                            500: '#5c7c8a',
+                            600: '#4a6774',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="font-sans text-stone-800 bg-stone-50 antialiased selection:bg-sea-500 selection:text-white">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-40 bg-white/95 backdrop-blur-md shadow-sm border-b border-stone-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex-shrink-0">
+                    <a href="index.html" class="font-serif text-2xl font-bold tracking-wider text-stone-900">
+                        Échappées Belles<span class="text-sea-500">.</span>
+                    </a>
+                </div>
+                <div class="hidden md:flex space-x-6 items-center">
+                    <a href="index.html" class="text-stone-600 hover:text-sea-500 text-sm font-medium uppercase tracking-wide"><i class="fa-solid fa-arrow-left text-xs mr-1"></i> Accueil</a>
+                    <a href="carry.html" class="text-stone-600 hover:text-sea-500 text-sm font-medium uppercase tracking-wide">Carry-le-Rouet</a>
+                    <a href="checkin.html" class="text-stone-600 hover:text-sea-500 text-sm font-medium uppercase tracking-wide">Arrivée</a>
+                    <a href="checkout.html" class="text-stone-600 hover:text-sea-500 text-sm font-medium uppercase tracking-wide">Départ</a>
+                    <a href="conditions.html" target="_blank" class="text-stone-600 hover:text-sea-500 text-sm font-medium uppercase tracking-wide">Conditions</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header Section -->
+    <header class="pt-32 pb-12 bg-white border-b border-stone-200">
+        <div class="max-w-4xl mx-auto px-4 text-center">
+            <p class="text-sea-500 font-medium tracking-[0.2em] uppercase text-xs mb-3">Guide Voyageur — Carry-le-Rouet</p>
+            <h1 class="text-4xl md:text-5xl font-serif text-stone-900 mb-4">Stationnement & Parkings</h1>
+            <p class="text-stone-600 font-light text-lg max-w-2xl mx-auto">
+                Toutes les informations sur les places réservées de la résidence ainsi que le guide du stationnement dans la commune.
+            </p>
+        </div>
+    </header>
+
+    <!-- Contenu Principal -->
+    <main class="py-16 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
+
+        <!-- 1. En-tête Privilège : Les 2 places privées de la résidence -->
+        <section class="bg-gradient-to-br from-sea-500 to-sea-600 text-white p-8 rounded-sm shadow-md">
+            <div class="flex flex-col md:flex-row items-center gap-6">
+                <div class="w-16 h-16 rounded-full bg-white/20 backdrop-blur-md flex items-center justify-center shrink-0 text-3xl">
+                    <i class="fa-solid fa-square-p"></i>
+                </div>
+                <div>
+                    <span class="inline-block bg-white/20 text-white text-[10px] font-semibold tracking-widest uppercase px-3 py-1 rounded-full mb-2">Inclus avec la location</span>
+                    <h2 class="text-2xl font-serif text-white mb-2">2 Places de parking privées dans la résidence</h2>
+                    <p class="text-stone-100 text-sm font-light leading-relaxed">
+                        Pour votre confort absolu, votre appartement comprend <strong>deux places de stationnement réservées et sécurisées</strong> au sein même de la résidence. Vous pouvez garer vos véhicules en toute tranquillité pendant toute la durée de votre séjour, sans frais supplémentaires.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 2. Carte Google Maps unique des parkings -->
+<!-- Carte des parkings de Carry-le-Rouet -->
+		<section class="bg-white p-6 md:p-8 rounded-sm border border-stone-200 shadow-sm space-y-6">
+			<div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 border-b border-stone-100 pb-4">
+				<div>
+					<h2 class="text-2xl font-serif text-stone-900 flex items-center gap-2">
+                <i class="fa-solid fa-map-location-dot text-sea-500"></i> Carte des parkings publics
+				</h2>
+            <p class="text-stone-500 text-xs font-light mt-1">Secteur Carry-le-Rouet — Port, Centre-ville & Plages.</p>
+			</div>
+		</div>
+
+		<div class="w-full h-[400px] md:h-[480px] rounded-sm overflow-hidden border border-stone-200 shadow-inner">
+			<iframe 
+				src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1453.1!2d5.152!3d43.333!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12c9c45b85a11111%3A0x0!2sParking%20du%20Port%20Carry%20le%20Rouet!5e0!3m2!1sfr!2sfr!4v1710000000000" 
+				width="100%" 
+				height="100%" 
+				style="border:0;" 
+				allowfullscreen="" 
+				loading="lazy" 
+				referrerpolicy="no-referrer-when-downgrade">
+			</iframe>
+		</div>
+		</section>
+
+        <!-- 3. Liste des parkings publics -->
+        <section class="bg-white p-6 md:p-8 rounded-sm border border-stone-200 shadow-sm space-y-6">
+            <h2 class="text-2xl font-serif text-stone-900 flex items-center gap-2">
+                <i class="fa-solid fa-square-parking text-sea-500"></i> Liste des parkings publics à proximité
+            </h2>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 text-sm">
+                
+                <!-- Parking 1 -->
+                <div class="bg-stone-50 p-5 rounded-sm border border-stone-100 flex items-start gap-4">
+                    <div class="w-10 h-10 rounded-full bg-sea-500/10 text-sea-500 flex items-center justify-center font-semibold shrink-0">
+                        P1
+                    </div>
+                    <div>
+                        <h3 class="font-serif font-semibold text-stone-900 text-base mb-1">Parking du Port / Esplanade</h3>
+                        <p class="text-stone-600 text-xs font-light leading-relaxed mb-2">Situé sur le quai Mâle, au plus près des restaurants, des commerces du port et des départs en bateau.</p>
+                        <span class="inline-block bg-stone-200 text-stone-700 text-[10px] uppercase font-medium px-2 py-0.5 rounded">Payant / Zone Horodateur</span>
+                    </div>
+                </div>
+
+                <!-- Parking 2 -->
+                <div class="bg-stone-50 p-5 rounded-sm border border-stone-100 flex items-start gap-4">
+                    <div class="w-10 h-10 rounded-full bg-sea-500/10 text-sea-500 flex items-center justify-center font-semibold shrink-0">
+                        P2
+                    </div>
+                    <div>
+                        <h3 class="font-serif font-semibold text-stone-900 text-base mb-1">Parking Fernandel (Centre-ville)</h3>
+                        <p class="text-stone-600 text-xs font-light leading-relaxed mb-2">À proximité immédiate du cinéma, de l'espace Fernandel et du marché hebdomadaire.</p>
+                        <span class="inline-block bg-stone-200 text-stone-700 text-[10px] uppercase font-medium px-2 py-0.5 rounded">Disque Bleu / Payant selon saison</span>
+                    </div>
+                </div>
+
+                <!-- Parking 3 -->
+                <div class="bg-stone-50 p-5 rounded-sm border border-stone-100 flex items-start gap-4">
+                    <div class="w-10 h-10 rounded-full bg-sea-500/10 text-sea-500 flex items-center justify-center font-semibold shrink-0">
+                        P3
+                    </div>
+                    <div>
+                        <h3 class="font-serif font-semibold text-stone-900 text-base mb-1">Parking de la Gare SNCF</h3>
+                        <p class="text-stone-600 text-xs font-light leading-relaxed mb-2">Avenue de la Gare. Idéal pour garer un véhicule supplémentaire sur plusieurs jours ou pour prendre le train de la Côte Bleue.</p>
+                        <span class="inline-block bg-emerald-100 text-emerald-800 text-[10px] uppercase font-medium px-2 py-0.5 rounded">Gratuit</span>
+                    </div>
+                </div>
+
+                <!-- Parking 4 -->
+                <div class="bg-stone-50 p-5 rounded-sm border border-stone-100 flex items-start gap-4">
+                    <div class="w-10 h-10 rounded-full bg-sea-500/10 text-sea-500 flex items-center justify-center font-semibold shrink-0">
+                        P4
+                    </div>
+                    <div>
+                        <h3 class="font-serif font-semibold text-stone-900 text-base mb-1">Parking du Rouet (Plage & Calanque)</h3>
+                        <p class="text-stone-600 text-xs font-light leading-relaxed mb-2">Accès direct à la plage du Rouet et aux activités nautiques.</p>
+                        <span class="inline-block bg-stone-200 text-stone-700 text-[10px] uppercase font-medium px-2 py-0.5 rounded">Payant en saison estivale</span>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- 4. Règles de stationnement de Carry-le-Rouet -->
+        <section class="bg-white p-6 md:p-8 rounded-sm border border-stone-200 shadow-sm space-y-6">
+            <h2 class="text-2xl font-serif text-stone-900 flex items-center gap-2">
+                <i class="fa-solid fa-circle-info text-sea-500"></i> Réglementation & Règles de stationnement
+            </h2>
+
+            <div class="space-y-4 text-sm text-stone-600 font-light leading-relaxed">
+                
+                <div class="border-l-4 border-sea-500 pl-4 py-1">
+                    <h3 class="font-medium text-stone-900 text-base mb-1">Saison estivale & Horodateurs</h3>
+                    <p>Le stationnement est payant sur les parkings du port et des plages de mai à octobre. Pensez à vous acquitter de votre ticket à l'horodateur ou via les applications mobiles de la ville.</p>
+                </div>
+
+                <div class="border-l-4 border-earth-500 pl-4 py-1">
+                    <h3 class="font-medium text-stone-900 text-base mb-1">Zones Bleues (Disque Européen)</h3>
+                    <p>En centre-ville, certaines zones nécessitent l'utilisation d'un <strong>disque de stationnement européen</strong> (durée limitée à 1h30 ou 2h selon le marquage au sol). Un disque est à votre disposition dans l'appartement si besoin.</p>
+                </div>
+
+                <div class="border-l-4 border-amber-500 pl-4 py-1">
+                    <h3 class="font-medium text-stone-900 text-base mb-1">Jours de Marché (Attention aux fourrières)</h3>
+                    <p>Le marché de Carry-le-Rouet se tient les <strong>mardis et vendredis matins</strong>. Il est strictement interdit de stationner sur la place de la Fontaine / espace Fernandel lors de ces matinées sous peine de mise en fourrière immédiate.</p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- 5. Liens complémentaires -->
+        <section class="bg-stone-100 p-6 rounded-sm border border-stone-200 text-center">
+            <h3 class="font-serif text-lg text-stone-900 mb-4">Besoin de plus d'informations pour votre arrivée ?</h3>
+            <div class="flex flex-wrap justify-center gap-4 text-xs font-medium uppercase tracking-wider">
+                <a href="checkin.html" class="bg-white text-stone-800 px-5 py-2.5 rounded-sm border border-stone-200 hover:border-sea-500 hover:text-sea-500 transition-colors">Guide d'Arrivée (Check-in)</a>
+                <a href="checkout.html" class="bg-white text-stone-800 px-5 py-2.5 rounded-sm border border-stone-200 hover:border-sea-500 hover:text-sea-500 transition-colors">Guide de Départ (Check-out)</a>
+                <a href="conditions.html" target="_blank" class="bg-white text-stone-800 px-5 py-2.5 rounded-sm border border-stone-200 hover:border-sea-500 hover:text-sea-500 transition-colors">Conditions Générales</a>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-stone-900 text-stone-400 py-10 text-center">
+        <a href="carry.html" class="inline-block bg-stone-800 text-stone-200 px-6 py-2 rounded-sm text-xs uppercase tracking-widest hover:bg-sea-500 transition-colors mb-4">Retour au logement Carry-le-Rouet</a>
+        <p class="text-xs font-light text-stone-600">&copy; 2026 Échappées Belles. Tous droits réservés.</p>
+    </footer>
+
+</body>
+</html>

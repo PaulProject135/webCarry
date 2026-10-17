@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guide de Départ (Check-out) - Échappées Belles</title>
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Configuration Tailwind CSS -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif'],
+                    },
+                    colors: {
+                        stone: {
+                            50: '#fafaf9',
+                            100: '#f5f5f4',
+                            200: '#e7e5e4',
+                            800: '#292524',
+                            900: '#1c1917',
+                        },
+                        earth: {
+                            500: '#8c7355',
+                            600: '#705c44',
+                        },
+                        sea: {
+                            500: '#5c7c8a',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="font-sans text-stone-800 bg-stone-50 antialiased selection:bg-earth-500 selection:text-white">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-40 bg-white/95 backdrop-blur-md shadow-sm border-b border-stone-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex-shrink-0">
+                    <a href="index.html" class="font-serif text-2xl font-bold tracking-wider text-stone-900">
+                        Échappées Belles<span class="text-earth-500">.</span>
+                    </a>
+                </div>
+                <div>
+                    <a href="index.html" class="inline-flex items-center gap-2 text-stone-600 hover:text-earth-500 text-sm font-medium uppercase tracking-wide transition-colors">
+                        <i class="fa-solid fa-arrow-left text-xs"></i> Accueil
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="pt-32 pb-12 bg-white border-b border-stone-200">
+        <div class="max-w-4xl mx-auto px-4 text-center">
+            <p class="text-earth-500 font-medium tracking-[0.2em] uppercase text-xs mb-3">Guide Voyageur</p>
+            <h1 class="text-4xl md:text-5xl font-serif text-stone-900 mb-4">Modalités de Départ (Check-out)</h1>
+            <p class="text-stone-600 font-light text-lg max-w-2xl mx-auto">
+                Merci pour votre séjour ! Voici les informations et consignes à respecter avant votre départ.
+            </p>
+        </div>
+    </header>
+
+    <!-- Contenu -->
+    <main class="py-16 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8">
+
+        <!-- Horaires & Condition de départ tardif -->
+        <section class="bg-white p-8 rounded-sm border border-stone-200 shadow-sm space-y-6">
+            <div class="flex items-start gap-5">
+                <div class="w-12 h-12 rounded-full bg-stone-100 flex items-center justify-center text-earth-600 shrink-0 text-xl">
+                    <i class="fa-solid fa-door-open"></i>
+                </div>
+                <div>
+                    <h2 class="text-xl font-serif text-stone-900 mb-2">Horaire de départ standard</h2>
+                    <p class="text-stone-600 text-sm font-light leading-relaxed">
+                        Le départ doit s'effectuer au plus tard à <strong>11h00</strong>.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Alerte Départ tardif -->
+            <div class="bg-stone-50 p-4 rounded-sm border border-stone-200 text-sm border-l-4 border-l-earth-500">
+                <h3 class="font-medium text-stone-900 mb-1 flex items-center gap-2">
+                    <i class="fa-solid fa-triangle-exclamation text-earth-500"></i> Départ tardif (après 11h)
+                </h3>
+                <p class="text-stone-600 font-light text-xs leading-relaxed">
+                    Tout départ non convenu au-delà de 11h00 entraînera une pénalité financière retenue sur la caution d'un montant <strong>50 €</strong>. Ce supplément permet de couvrir le retard occasionné pour l'équipe de ménage et la préparation des logements pour les futurs voyageurs.
+                </p>
+            </div>
+        </section>
+
+        <!-- Checklist avant le départ -->
+        <section class="bg-white p-8 rounded-sm border border-stone-200 shadow-sm">
+            <h2 class="text-2xl font-serif text-stone-900 mb-6"><i class="fa-solid fa-square-check text-earth-500 mr-2"></i>Checklist de départ</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 text-sm text-stone-600 font-light">
+                <div class="flex items-start gap-3 bg-stone-50 p-4 rounded-sm border border-stone-100">
+                    <i class="fa-solid fa-utensils text-earth-500 mt-1"></i>
+                    <div>
+                        <strong class="text-stone-900 block font-medium mb-1">Cuisine & Vaisselle</strong>
+                        Lavez et rangez la vaisselle ou lancez le lave-vaisselle. Videz le réfrigérateur.
+                    </div>
+                </div>
+                <div class="flex items-start gap-4 bg-stone-50 p-4 rounded-sm border border-stone-100">
+                    <i class="fa-solid fa-trash-can text-earth-500 mt-1"></i>
+                    <div>
+                        <strong class="text-stone-900 block font-medium mb-1">Poubelles</strong>
+                        Videz les poubelles et déposez-les dans les conteneurs extérieurs prévus.
+                    </div>
+                </div>
+                <div class="flex items-start gap-4 bg-stone-50 p-4 rounded-sm border border-stone-100">
+                    <i class="fa-solid fa-temperature-arrow-down text-earth-500 mt-1"></i>
+                    <div>
+                        <strong class="text-stone-900 block font-medium mb-1">Énergie & Équipements</strong>
+                        Éteignez toutes les lumières, le chauffage / la climatisation et fermez bien les fenêtres.
+                    </div>
+                </div>
+                <div class="flex items-start gap-4 bg-stone-50 p-4 rounded-sm border border-stone-100">
+                    <i class="fa-solid fa-key text-earth-500 mt-1"></i>
+                    <div>
+                        <strong class="text-stone-900 block font-medium mb-1">Verrouillage & Clés</strong>
+                        Fermez la porte à clé et replacez le jeu de clés dans la boîte à clés sécurisée.
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="bg-white p-8 rounded-sm border border-stone-200 shadow-sm text-center">
+            <h2 class="text-2xl font-serif text-stone-900 mb-2">Un bon séjour ?</h2>
+            <p class="text-stone-600 text-sm font-light mb-4">N'hésitez pas à nous envoyer un message pour nous faire part de vos impressions !</p>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-stone-900 text-stone-400 py-10 text-center">
+        <a href="index.html" class="inline-block bg-stone-800 text-stone-200 px-6 py-2 rounded-sm text-xs uppercase tracking-widest hover:bg-earth-500 transition-colors mb-4">Retour à l'accueil</a>
+        <p class="text-xs font-light text-stone-600">&copy; 2026 Échappées Belles. Tous droits réservés.</p>
+    </footer>
+
+</body>
+</html>

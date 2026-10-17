@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conditions & Règles de Location - Échappées Belles</title>
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Configuration Tailwind CSS -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif'],
+                    },
+                    colors: {
+                        stone: {
+                            50: '#fafaf9',
+                            100: '#f5f5f4',
+                            200: '#e7e5e4',
+                            800: '#292524',
+                            900: '#1c1917',
+                        },
+                        earth: {
+                            500: '#8c7355',
+                            600: '#705c44',
+                        },
+                        sea: {
+                            500: '#5c7c8a',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="font-sans text-stone-800 bg-stone-50 antialiased selection:bg-earth-500 selection:text-white">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-40 bg-white/95 backdrop-blur-md shadow-sm border-b border-stone-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex-shrink-0">
+                    <a href="index.html" class="font-serif text-2xl font-bold tracking-wider text-stone-900">
+                        Échappées Belles<span class="text-earth-500">.</span>
+                    </a>
+                </div>
+                <div>
+                    <a href="index.html" class="inline-flex items-center gap-2 text-stone-600 hover:text-earth-500 text-sm font-medium uppercase tracking-wide transition-colors">
+                        <i class="fa-solid fa-arrow-left text-xs"></i> Retour au site
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header Section -->
+    <header class="pt-32 pb-12 bg-white border-b border-stone-200">
+        <div class="max-w-4xl mx-auto px-4 text-center">
+            <p class="text-earth-500 font-medium tracking-[0.2em] uppercase text-xs mb-3">Règlement Intérieur & Contrat</p>
+            <h1 class="text-4xl md:text-5xl font-serif text-stone-900 mb-6">Conditions Générales de Location</h1>
+            <p class="text-stone-600 font-light text-lg leading-relaxed max-w-2xl mx-auto">
+                Afin de garantir un séjour agréable et serein à l'ensemble de nos voyageurs, merci de prendre connaissance des règles qui régissent la location de nos logements.
+            </p>
+        </div>
+    </header>
+
+    <!-- Contenu des Conditions -->
+    <main class="py-16 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
+
+        <!-- 1. Capacité & Respect de l'occupation -->
+        <section class="bg-white p-8 rounded-sm border border-stone-200 shadow-sm">
+            <div class="flex items-center gap-3 text-earth-600 mb-4">
+                <i class="fa-solid fa-users text-2xl"></i>
+                <h2 class="text-2xl font-serif text-stone-900">1. Capacité d'accueil & Voyageurs</h2>
+            </div>
+            <div class="space-y-3 text-stone-600 text-sm leading-relaxed font-light">
+                <p>Le nombre de personnes occupant le logement ne doit strictement pas dépasser la capacité maximale autorisée :</p>
+                <ul class="list-disc pl-5 space-y-1 font-normal text-stone-800">
+                    <li><strong>Carry-le-Rouet (Mer) :</strong> 2 voyageurs maximum.</li>
+                    <li><strong>Alpage Montagne (Chalet) :</strong> 10 voyageurs maximum.</li>
+                </ul>
+                <p>Toute personne supplémentaire non déclarée lors de la réservation est formellement interdite sans l'accord préalable écrit des propriétaires.</p>
+            </div>
+        </section>
+
+        <!-- 2. Arrivée & Départ -->
+        <section class="bg-white p-8 rounded-sm border border-stone-200 shadow-sm">
+            <div class="flex items-center gap-3 text-earth-600 mb-4">
+                <i class="fa-solid fa-clock text-2xl"></i>
+                <h2 class="text-2xl font-serif text-stone-900">2. Horaires d'arrivée et de départ</h2>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 text-sm text-stone-600 font-light">
+                <div class="bg-stone-50 p-4 rounded-sm border border-stone-100">
+                    <h3 class="font-serif text-stone-900 font-semibold mb-2 text-base"><i class="fa-solid fa-key mr-2 text-earth-500"></i>Arrivée (Check-in)</h3>
+                    <p>À partir de <strong>16h00</strong>. L'arrivée se fait en autonomie grâce à un système de boîte à clés sécurisée. Les instructions d'accès vous seront transmises 24h avant votre arrivée.</p>
+                </div>
+                <div class="bg-stone-50 p-4 rounded-sm border border-stone-100">
+                    <h3 class="font-serif text-stone-900 font-semibold mb-2 text-base"><i class="fa-solid fa-door-open mr-2 text-earth-500"></i>Départ (Check-out)</h3>
+                    <p>Jusqu'à <strong>10h00</strong> au plus tard. Tout dépassement horaire non convenu pourra faire l'objet d'une retenue sur la caution afin d'assurer l'intervention des équipes de ménage.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. Règles de vie & Interdictions -->
+        <section class="bg-white p-8 rounded-sm border border-stone-200 shadow-sm">
+            <div class="flex items-center gap-3 text-earth-600 mb-4">
+                <i class="fa-solid fa-ban text-2xl"></i>
+                <h2 class="text-2xl font-serif text-stone-900">3. Savoir-vivre & Interdictions</h2>
+            </div>
+            <div class="space-y-4 text-stone-600 text-sm leading-relaxed font-light">
+                <div class="flex items-start gap-3">
+                    <i class="fa-solid fa-ban-smoking text-red-500 text-lg mt-0.5"></i>
+                    <p><strong>Logements strictement non-fumeurs :</strong> Il est formellement interdit de fumer ou de vapoter à l'intérieur des locaux. Vous pouvez fumer en extérieur (terrasse/balcon) en utilisant un cendrier.</p>
+                </div>
+                <div class="flex items-start gap-3">
+                    <i class="fa-solid fa-volume-xmark text-red-500 text-lg mt-0.5"></i>
+                    <p><strong>Soirées & Fêtes strictement interdites :</strong> Afin de respecter la tranquillité du voisinage, les rassemblements festifs et le bruit excessif (particulièrement entre 22h et 8h) ne sont pas tolérés.</p>
+                </div>
+                <div class="flex items-start gap-3">
+                    <i class="fa-solid fa-paw text-earth-500 text-lg mt-0.5"></i>
+                    <p><strong>Animaux de compagnie :</strong> Les animaux ne sont admis qu'après demande préalable et confirmation écrite de notre part.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. Caution & Paiement -->
+        <section class="bg-white p-8 rounded-sm border border-stone-200 shadow-sm">
+            <div class="flex items-center gap-3 text-earth-600 mb-4">
+                <i class="fa-solid fa-shield-halved text-2xl"></i>
+                <h2 class="text-2xl font-serif text-stone-900">4. Caution & Modalités de Paiement</h2>
+            </div>
+            <div class="space-y-3 text-stone-600 text-sm leading-relaxed font-light">
+                <p><strong>Acompte :</strong> Un acompte de 30% du montant total est exigé pour valider définitivement votre réservation. Le solde doit être réglé 14 jours avant le début du séjour.</p>
+                <p><strong>Dépôt de garantie (Caution) :</strong> Une empreinte bancaire non débitée vous sera demandée avant la remise des clés. Elle sera automatiquement libérée dans les 7 jours suivant votre départ, sous réserve qu'aucune dégradation ou manquement aux règles n'ait été constaté.</p>
+            </div>
+        </section>
+
+        <!-- 5. Ménage & État des lieux -->
+        <section class="bg-white p-8 rounded-sm border border-stone-200 shadow-sm">
+            <div class="flex items-center gap-3 text-earth-600 mb-4">
+                <i class="fa-solid fa-broom text-2xl"></i>
+                <h2 class="text-2xl font-serif text-stone-900">5. Ménage & Entretien</h2>
+            </div>
+            <div class="space-y-3 text-stone-600 text-sm leading-relaxed font-light">
+                <p>Bien que les frais de ménage de fin de séjour soient inclus dans le tarif, les voyageurs sont tenus de laisser le logement dans un état de propreté décent lors du départ :</p>
+                <ul class="list-disc pl-5 space-y-1">
+                    <li>La vaisselle doit être lavée et rangée.</li>
+                    <li>Les poubelles doivent être vidées dans les conteneurs prévus à cet effet.</li>
+                    <li>Les appareils électroménagers (four, micro-ondes, réfrigérateur) doivent être laissés propres.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- 6. Annulation -->
+        <section class="bg-white p-8 rounded-sm border border-stone-200 shadow-sm">
+            <div class="flex items-center gap-3 text-earth-600 mb-4">
+                <i class="fa-solid fa-file-signature text-2xl"></i>
+                <h2 class="text-2xl font-serif text-stone-900">6. Conditions d'annulation</h2>
+            </div>
+            <div class="space-y-2 text-stone-600 text-sm leading-relaxed font-light">
+                <p>Pour toute réservation effectuée en direct :</p>
+                <ul class="list-disc pl-5 space-y-1">
+                    <li><strong>Annulation à plus de 30 jours avant l'arrivée :</strong> Remboursement intégral de l'acompte.</li>
+                    <li><strong>Annulation entre 30 et 14 jours avant l'arrivée :</strong> L'acompte de 30% est conservé.</li>
+                    <li><strong>Annulation à moins de 14 jours avant l'arrivée :</strong> La totalité du séjour est due.</li>
+                </ul>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-stone-900 text-stone-400 py-12 text-center border-t border-stone-800">
+        <div class="max-w-7xl mx-auto px-4">
+            <h4 class="font-serif text-2xl text-white mb-4">Échappées Belles.</h4>
+            <p class="text-xs font-light text-stone-500 mb-6">
+                Locations de charme en direct propriétaire — Carry-le-Rouet & Alpes Françaises.
+            </p>
+            <a href="index.html" class="inline-block bg-stone-800 text-stone-200 px-6 py-2 rounded-sm text-xs uppercase tracking-widest hover:bg-earth-500 transition-colors">
+                Retour à l'accueil
+            </a>
+            <p class="text-xs font-light text-stone-600 mt-8">
+                &copy; 2026 Échappées Belles. Tous droits réservés.
+            </p>
+        </div>
+    </footer>
+
+</body>
+</html>
